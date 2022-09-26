@@ -1,3 +1,4 @@
+/*global */
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +21,21 @@ button {
     font-size: 120%;
 }
 
-/*positioning the main container*/
+h1, h2 {
+    color:rgb(225, 227, 119)
+} 
+
+p1 {
+    color:rgb(174, 240, 174)
+}
+
+/*positioning the main outer container*/
 .container {
     padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 .topbar {
     padding-top: 25px;
@@ -32,3 +45,23 @@ button {
     float: right
 }
 
+/*positioning the inner container */
+
+.container1 {
+    background: darkgreen;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* intro to the quiz */
+
+.intro {
+    margin-top: 10%;
+}
+
+/* quiz questions */
